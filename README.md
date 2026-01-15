@@ -1,22 +1,17 @@
-# simple-macos-sec 🛡️
+simple-macos-sec 🛡️
+A lightweight security toolkit for macOS environments and cloud infrastructure. This project provides a Bash-based auditor for local system health checks and Terraform logic for managing cloud security groups.
 
-A lightweight Bash-based security auditor for macOS. This tool provides a quick health check of core security settings and monitors for unauthorized network listeners.
+Features
+💻 macOS Security Auditor (mac_audit.sh)
+✅ Firewall Audit: Verifies if the macOS Application Firewall is active.
 
-## Features
-- ✅ **Firewall Audit**: Verifies if the macOS Application Firewall is active.
-- 🕵️ **Stealth Mode Check**: Ensures the system is hidden from network probes (pings).
-- 🔒 **FileVault Verification**: Checks if full-disk encryption is enabled.
-- 📡 **Anomaly Detection**: Compares current listening ports against a known baseline.
-- ⚠️ **Sharing Alert**: Flags dangerous active services (Screen Sharing, SSH, etc.).
+🕵️ Stealth Mode Check: Ensures the system is hidden from network probes (pings).
 
-## Installation & Setup
-1. Clone the repository:
-   `git clone https://github.com/YOUR_USERNAME/simple-macos-sec.git`
-2. Make the script executable:
-   `chmod +x mac_audit.sh`
+🔒 FileVault Verification: Checks if full-disk encryption is enabled.
 
-## Usage
-Run the script to perform a live security audit:
-`./mac_audit.sh`
+📡 Anomaly Detection: Compares current listening ports against a known baseline.
 
-*Note: The first run will generate a `security_baseline.txt`. Subsequent runs will alert you if any **new** ports are opened.*
+⚠️ Sharing Alert: Flags dangerous active services (Screen Sharing, SSH, etc.).
+
+☁️ Cloud Security
+🛡️ Security Group Logic (Task F2): Terraform configurations to define and manage cloud-based firewall rules and access control lists.
